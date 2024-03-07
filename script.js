@@ -114,7 +114,7 @@ regSubmitBtn.addEventListener("click", () => {
         "Email Already Exists"
       );
       clearRegForm();
-    } else if (validateEmail(regEmail)) {
+    } else if (!validateEmail(regEmail)) {
       showAlert("Please enter a valid email", "error", "Invalid Email");
       document.getElementById("email-reg").value = "";
     } else if (usernameExists) {
