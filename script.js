@@ -102,9 +102,8 @@ regSubmitBtn.addEventListener("click", () => {
       (user) => user.username === regUsername
     );
 
-    // Validate email format
     function validateEmail(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+(\.[^\s@]+)*$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
     }
 
