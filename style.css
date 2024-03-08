@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  margin-top: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  height: 500px;
+  padding: 0 20px;
+  text-align: center;
+  box-shadow: inset 0 0 5px 2px rgba(255, 255, 255, 0.5),
+    0 0 5px 2px rgba(255, 255, 255, 0.5);
+}
+.header {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.header > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header > input {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #2600ff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.header > input:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+input:disabled {
+  background-color: #2600ff55;
+  border: 2px solid #ffffff;
+}
+input:disabled:hover {
+  background-color: #2600ff55;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: auto;
+}
+.content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+}
+.login input,
+.register input,
+button {
+  margin: 5px 0;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  background: none;
+  line-height: 1.6;
+  color: #fff;
+}
+button {
+  margin: 10px 0;
+  background-color: #2600ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+button:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+button:active {
+  opacity: 0.7;
+}
+.main p {
+  margin: 5px;
+}
+.main a {
+  text-decoration: none;
+  color: #2600ff;
+}
+.main a:hover {
+  color: rgb(4, 184, 255);
+}
+.main a:active {
+  opacity: 0.7;
+}
+.hide {
+  display: none;
+}

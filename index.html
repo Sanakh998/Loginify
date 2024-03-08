@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- styling for sweetalert library alert boxes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>JavaScript Registration</h1>
+        <input type="button" value="Register" class="reg-btn" disabled />
+        <input type="button" value="Login" class="log-btn" />
+      </div>
+      <div class="content">
+        <div class="login log-container hide">
+          <form action="">
+            <input
+              type="text"
+              placeholder="username"
+              id="username-log"
+              autocomplete="on"
+            />
+            <input type="password" placeholder="password" id="password-log" />
+            <button type="button" id="log-btn-submit">Login</button>
+          </form>
+        </div>
+        <div class="register reg-container">
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              id="email-reg"
+              autocomplete="on"
+            />
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              id="username-reg"
+              autocomplete="on"
+            />
+            <input
+              type="password"
+              placeholder="password"
+              name="password"
+              id="password-reg"
+            />
+            <button type="button" id="reg-btn-submit">Register</button>
+          </form>
+        </div>
+        <div class="footer-log">
+          <p>Already Have an Account</p>
+          <a href="#" class="log-btn">login here</a>
+        </div>
+        <div class="footer-reg hide">
+          <p>Are You New Here</p>
+          <a href="#" class="reg-btn">Register here</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sweetalert library code for alert box -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
